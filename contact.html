@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <head>
+    </head>
+    
+    <style>
+        .div6{
+            padding: 0px;
+        }
+        
+        b{
+            color: #01a85a;
+        }
+        
+        p
+        {
+            font-size: 16px;
+        }
+        
+        #map {
+        width: 100%;
+        background-color: gray;
+            height: 40vw;
+      }
+        
+        .mytable{
+            padding-top: 10px;
+        }
+        
+        #mydiv
+        {
+            padding-top: 25px;
+        }
+        
+    </style>
+
+       <div class="container-fluid">
+           <div class="col-xl-8 col-xl-offset-2 col-lg-10 col-lg-offset-1 col-md-12" style="display: table;">
+                <div class="div6">
+                
+                <div class="container-fluid client-container">
+                <div class="row client">
+                    <!--<div class="col-md-4"><img src="novel.PNG" alt=""></div>-->
+                    <div class="col-md-12">
+                        <div id="map" onload="initMap()">
+                    <script>
+                      function initMap() {
+                        var uluru = {lat:33.75280008003926, lng: 72.72000253450528};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 4,
+                          center: uluru,
+                            zoom: 15
+                        });
+                        var marker = new google.maps.Marker({
+                          position: uluru,
+                          map: map
+                        });
+                      }
+                    </script>
+                      <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUgk1nviTOL-Q13fmgx5AbACEWBZ1Dil0&callback=initMap">
+                    </script>
+                  </div>
+                        
+                    </div>
+                </div>
+                <div class="row client">
+                    <!--<div class="col-md-4"><img src="neofar.png" alt=""></div>-->
+                    
+                        
+                    </div>
+                    <div class="col-md-12" id="mydiv">
+                    <p><b>Head-Office Address:</b> D-914, D Block, Satellite Town, Rawalpindi</p>
+                    <p><b>Factory Address: </b> 17-A, Punjab Small Industrial Estate, Taxila</p>
+                    <p><b>Telephone:</b> 051-4949502-3</p>
+                    <p><b>Others:</b> +92-51-4453113 and 4842534</p>
+                    <p><b>E-mail:</b> info@inceptapharmapk.com</p>
+                    <div class="social-networks2">
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                        
+                    </div>
+                </div>
+               </div>
+           </div>
+    </div>
+
+
+</body>
+</html>
